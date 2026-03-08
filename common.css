@@ -1,0 +1,12 @@
+/* ตัวอย่าง common.css */
+:root {
+  --primary-color: #007bff; /* สีจาก Figma */
+  --text-dark: #333;
+  --bg-light: #f4f4f4;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header-top">
+
+        <div class="header-left">
+            <img src="image/Logo.png" alt="IoT Logo" class="logo">
+
+            <div class="header-title">
+                <h1>Department of IoT &</h1>
+                <h1>Information Engineering</h1>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <span>E-12 Building</span>
+            <span>✉ iote@kmitl.ac.th</span>
+        </div>
+
+    </div>
+<!-- NAVIGATION -->
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academic.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li class="dropdown">
+                    Contact
+                    <div class="dropdown-content">
+                        <a href="contact.html">IoT System and Information</a>
+                        <a href="contact1.html">Dual Degree</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    Faculty
+                    <div class="dropdown-content">
+                        <a href="Professor of IoTE.html">Professor of IoT System and Information</a>
+                        <a href="Professor of PhysIoTE.html">Professor of Industrial Physics</a>
+                    </div>
+                </li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="CareerPath.html">CareerPath</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div> 
+    <div class="Welcome">
+        <a href="about.html"> <button class="welcome-button">About IoTE</button> </a>
+    </div>
+ 
+    <!-- News -->
+    <section class="news-section">
+        <div class="news-header">
+            <h2>NEWS</h2>
+        </div>
+    
+        <div class="news-grid">
+            <a href="https://www.facebook.com/share/p/17c6GQsfUD/" target="_blank">
+                <img src="image/News1.jpg" alt="News 1">
+            </a>
+
+            <a href="https://www.facebook.com/share/p/19wuj6HBRP/" target="_blank">
+                <img src="image/News2.jpg" alt="News 2">
+            </a>
+
+            <a href="https://www.facebook.com/share/p/18HX44JBfQ/" target="_blank">
+                <img src="image/News3.jpg" alt="News 3">
+            </a>
+            <a href="https://www.facebook.com/share/p/1B9YNnEP73/" target="_blank">
+                <img src="image/News4.jpg" alt="News 4">
+            </a>
+            <a href="https://www.facebook.com/share/p/17oUpek5XE/" target="_blank">
+                <img src="image/News5.jpg" alt="News 5">
+            </a>
+            <a href="https://www.facebook.com/share/p/1QXsV5Zorg/" target="_blank">
+                <img src="image/News6.jpg" alt="News 6">
+            </a>
+            
+        </div>
+    </section>
+<!-- Activities -->
+<section class="activities-section">
+    <div class="activities-bg"></div>
+    
+    <div class="activities-content">
+        <h2 class="activities-title">ACTIVITIES</h2>
+        
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="image-container">
+                    <img src="image/Measurement Multimeter.png" alt="Measurement Multimeter">
+                </div>
+                <a href="#detail-1" class="activity-btn">Measurement Multimeter</a>
+            </div>
+
+            <div class="activity-card">
+                <div class="image-container">
+                    <img src="image/safetyCap.png" alt="Safety cap">
+                </div>
+                <a href="#detail-2" class="activity-btn">Safety cap</a>
+            </div>
+
+            <div class="activity-card">
+                <div class="image-container">
+                    <img src="image/blendingMachine.png" alt="Automatic Blending Machine">
+                </div>
+                <a href="#detail-3" class="activity-btn">Automatic Blending Machine</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- More -->
+<section class="activities-more">
+    <div class="activities-details-container">
+        <div id="detail-1" class="detail-box">
+            <img src="image/Measurement Multimeter.png" alt="Detail 1">
+            <div class="detail-text">
+                <h3>หลักการทำงาน</h3>
+                <p>ประกอบไปด้วยเซนเซอร์ 2 ตัว คือ DHT 22 Digital Temperature and Humidity ใช้สำหรับตรวจจับอุณหภูมิและความชื้น และ MQ-5 LPG Natural Gas Sensor Module สำหรับวัดปริมาณแก๊ส LPG เมื่อมีแก๊สรั่วไหล และมีอุปกรณ์ DS 3231 RTC Clock Memory เพื่อนับเวลา</p>
+                <h3>วิธีการใช้งาน</h3>
+                <p>เสียบสาย USB เพื่อจ่ายไฟแก่ Arduino จะแสดงข้อความ Measurement Multimeter กดสวิตช์ 1 ครั้งจะแสดงเวลา เมื่อกดสวิตช์อีก 1 ครั้ง จะแสดงอุณหภูมิและความชื้น เมื่อมีอุณหภูมิน้อยกว่า 25°c LED จะติดเป็นสีเขียว เมื่ออุณหภูมิมากกว่า 25°c LED จะติดเป็นสีเหลือง และเมื่ออุณหภูมิสูงเกิน 30°c LED จะติดเป็นสีแดง และแสดงความชื้นในอากาศเป็น % เมื่อกดสวิตช์อีก 1 ครั้งจะแสดงปริมาณแก๊ส LPG เป็น % เมื่อกดสวิตช์อีก 1 ครั้งจะแสดงเวลาเหมือนเดิม</p>
+            </div>
+        </div>
+    </div>
+      <div class="activities-details-container">
+        <div id="detail-2" class="detail-box">
+            <img src="image/safetyCap.png" alt="Detail 2">
+            <div class="detail-text">
+                <h3>หลักการทำงาน</h3>
+                <p>เซนเซอร์ตรวจจับความเร่งแบบ 3 แกน (accelerometer sensor : รุ่น ADXL345) จะถูกติดตั้งไว้ที่ด้านบนบริเวณกึ่งกลางของหมวก เมื่อหมวกมีการเอียงไปมาตัวเซนเซอร์จะวัดค่าแกน X Y และ Z แล้วนำค่าที่ได้มาคำนวณเป็นองศาและเขียนโปรแกรมผ่าน Arduino เพื่อควบคุมหลอดไฟ LED ให้มืด-สว่างตามองศาที่กำหนด</p>
+                <h3>วิธีการใช้งาน</h3>
+                <p>เมื่อในถังไม่มีขยะอยู่ ตัวแสดงผลจะแสดงเป็น 0 ตัวแสดงผลจะมีค่าเพิ่มขึ้นเรื่อยๆตามปริมาณขยะที่อยู่ภายในถัง และเมื่อมีขยะเต็ม (มีปริมาณมากพอที่ควรทิ้ง) ตัวแสดงผลจะแสดงเป็นคำว่า FULL</p>
+            </div>
+        </div>
+    </div>
+    <div class="activities-details-container">
+        <div id="detail-3" class="detail-box">
+            <img src="image/blendingMachine.png" alt="Detail 3">
+            <div class="detail-text">
+                <h3>หลักการทำงาน</h3>
+                <p>ใช้ปั๊มลมในการดันน้ำขึ้นมาผสมควบคุมโดยโปรแกรมในArduino</p>
+                <h3>วิธีการใช้งาน</h3>
+                <p>เมื่อกดปุ่มปั๊มน้ำจะทำงานโดยปล่อยลมไปดันน้ำในภาชนะทั้งสองขึ้นมาในปริมาณที่ได้กำหนดสัดส่วนไว้ด้วยเวลาที่ได้ออกแบบไว้ในโปรแกรม โดยสามารถนำมาประยุกต์ใช้กับการชงเครื่องดื่ม หรือ การรดน้ำต้นไม้การทำสวนได้</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer">
+</body>
+
+
+
+
+

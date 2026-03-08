@@ -1,0 +1,435 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f6f6;
+  color: #333;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+.header-top {
+  background: #8B0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  transform: translateY(10px);
+}
+
+.header-title {
+  font-family: 'Inria Serif', serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header-right {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  font-size: 14px;
+  text-align: right;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  background: linear-gradient(90deg, #5c0000, #8B0000, #5c0000);
+  padding: 22px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: white;          
+}
+nav ul li {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  
+}
+
+nav ul li:hover {
+  color: #ffe5e5;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.dropdown-content {
+    background-color: #ffffff;    
+    min-width: 250px;            
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+    border-radius: 8px;        
+}
+
+
+.dropdown-content a {
+    color: #333333 !important;   
+    padding: 12px 16px;
+    text-decoration: none;        
+    display: block;
+    text-align: left;            
+    font-size: 14px;             
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;    
+    color: #990000 !important;   
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 0;
+  min-width: 260px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown-content div {
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;          
+  color: #111111;           
+  letter-spacing: 0.3px;     
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.dropdown-content div:hover {
+  background: #f3f3f3;
+  border-left: 4px solid #8B0000;
+  color: #000000;            
+  padding-left: 28px;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================
+   Show section
+========================= */
+.show-section {
+
+    background-image: url('image/back3.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center; 
+}
+
+.show-container h1 {
+    font-size: 3.5rem;
+    color: #5c0000;
+    text-shadow: 2px 2px 10px rgba(169, 131, 131, 0.8); 
+    margin-top: 80px;
+    text-align: center;
+}
+.show-container h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* =========================
+  Activities
+========================= */
+
+.activities-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;           
+    padding: 60px 20px;
+    flex-wrap: wrap;      
+}
+
+
+.activity-card {
+    width: 320px;
+    background: #4d1a1a;  
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+}
+
+.activity-btn {
+    width: 100%;
+    min-height: 300px;    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    gap: 50px;          
+    padding: 30px;
+    color: white !important;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+
+.activity-btn i {
+    font-size: 55px;     
+}
+
+.activity-btn span {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+}
+
+
+/* =========================
+Curriculum
+========================= */
+
+.curriculum-section {
+    background-color: #8B0000; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.curriculum-container h1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 60px;
+}
+
+.curriculum-container h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.curriculum-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.curriculum-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.curriculum-card::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+
+.curriculum-card:nth-child(1)::before { background-image: url('https://cdn-icons-png.flaticon.com/512/3022/3022315.png'); filter: brightness(0) invert(1); } /* Icon หลอดทดลอง */
+.curriculum-card:nth-child(2)::before { background-image: url('https://cdn-icons-png.flaticon.com/512/3524/3524659.png'); filter: brightness(0) invert(1); } /* Icon ฟันเฟือง */
+.curriculum-card:nth-child(3)::before { background-image: url('https://cdn-icons-png.flaticon.com/512/93/93158.png'); filter: brightness(0) invert(1); } /* Icon Wifi/IoT */
+
+.curriculum-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.curriculum-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* =========================
+What is Dual Degree
+========================= */
+
+
+.banner-grid {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.banner-card {
+    position: relative;
+    width: 380px;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.banner-card:hover {
+    transform: translateY(-5px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.banner-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.content {
+    color: white;
+    padding: 20px;
+}
+.content h3 {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.overlay .content i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+/* =========================
+Program Synopsis
+========================= */
+.Program-Synopsis {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.Program-Synopsis-selection{
+    background-color: #8B0000;
+}
+.Program-Synopsis-selection .text h1 {
+    font-size: 36px;
+    font-weight: 550;
+    padding: 40px 20px;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+.Program-Synopsis img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+ 
+}
+.last  {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+ 
+}
